@@ -1,0 +1,761 @@
+
+
+#screen{
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
+    cursor: url(../img/small_axe.png), auto;
+}
+
+#game{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#game_background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/background.svg);
+    background-size: cover;
+}
+
+/* MIDDELGROUND */
+
+#b1{
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    background-image: url(../img/bush.svg);
+    background-size: 100% 100%;
+    z-index: 2;
+    transform: scaleX(-1);
+}
+
+#b2{
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background-image: url(../img/bush.svg);
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+#b3{
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 43%;
+    left: 55%;
+    background-image: url(../img/bush.svg);
+    background-size: 100% 100%;
+    z-index: 2;
+    transform: scaleX(-1);
+}
+
+#b4{
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 43%;
+    left: 83%;
+    background-image: url(../img/stone.svg);
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+#b5{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    background-image: url(../img/bush.svg);
+    background-size: 100% 100%;
+    z-index: 4;
+    transform: scaleX(-1);
+}
+
+#b6{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    background-image: url(../img/bush.svg);
+    background-size: 100% 100%;
+    z-index: 4;
+}
+
+#b7{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 57%;
+    left: 60%;
+    background-image: url(../img/stone.svg);
+    background-size: 100% 100%;
+    z-index: 4;
+    transform: scaleX(-1);
+}
+
+#b8{
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 70%;
+    right: 1%;
+    background-image: url(../img/bush.svg);
+    background-size: 100% 100%;
+    z-index: 6;
+    transform: scaleX(-1);
+}
+
+#b9{
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    background-image: url(../img/stone.svg);
+    background-size: 100% 100%;
+    z-index: 6;
+}
+
+/* GAME ELEMENTS CONTAINER */
+
+#s_container_1{
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+#i_container_1{
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+#e_container_1{
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+#s_container_2{
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+#i_container_2{
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+#e_container_2{
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+/* GAME ELEMENTS CONTAINER BOSS */
+
+#boss_l_container{
+    width: 40%;
+    aspect-ratio: 3/4;
+    position: absolute;
+    top: 5%;
+    left: -43%;
+    z-index: 7;
+    rotate: 45deg;
+}
+
+#boss_m_container{
+    width: 40%;
+    aspect-ratio: 3/4;
+    position: absolute;
+    top: 81%;
+    left: 37%;
+    z-index: 7;
+}
+
+#boss_r_container{
+    width: 40%;
+    aspect-ratio: 3/4;
+    position: absolute;
+    top: 5%;
+    right: -44%;
+    z-index: 7;   
+    rotate: -45deg;
+}
+
+
+/* SCOTHISH SPRITE */
+
+#s_sprite_1{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/scotish_man.svg);
+    background-size: 100% 100%;
+}
+
+#s_sprite_2{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/scotish_man.svg);
+    background-size: 100% 100%;
+}
+
+/* IRISH SPRITE */
+
+#i_sprite_1{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/irishman.svg);
+    background-size: 100% 100%;
+}
+
+#i_sprite_2{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/irishman.svg);
+    background-size: 100% 100%;
+}
+
+/* ENGLISH SPRITE */
+
+#e_sprite_1{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/englishman.svg);
+    background-size: 100% 100%;
+}
+
+#e_sprite_2{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/englishman.svg);
+    background-size: 100% 100%;
+}
+
+
+/* DEAD SCOTHISH SPRITE */
+
+#s_sprite_d_1{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/scotish_dead_man.svg);
+    background-size: 100% 100%;
+}
+
+#s_sprite_d_2{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/scotish_dead_man.svg);
+    background-size: 100% 100%;
+}
+
+
+/* DEAD IRISH SPRITE */
+
+#i_sprite_d_1{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/irish_dead_man.svg);
+    background-size: 100% 100%;
+}
+
+#i_sprite_d_2{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/irish_dead_man.svg);
+    background-size: 100% 100%;
+}
+
+
+/* DEAD ENGLISH SPRITE */
+
+#e_sprite_d_1{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/english_dead_man.svg);
+    background-size: 100% 100%;
+}
+
+#e_sprite_d_2{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/english_dead_man.svg);
+    background-size: 100% 100%;
+}
+ 
+
+/* BOSS SPRITE */
+
+#boss_l_sprite{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/boss_left.svg);
+    background-size: 100% 100%;
+}
+
+#boss_m_sprite{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/boss_middel.svg);
+    background-size: 100% 100%;
+}
+
+#boss_r_sprite{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/boss_right.svg);
+    background-size: 100% 100%;
+}
+
+/* POSISIONS */
+
+.pos1{
+    width: 8%;
+    top: 45%;
+    left: 5%;
+    z-index: 1;
+}
+
+.pos2{
+    width: 8%;
+    top: 40%;
+    left: 38%;
+    z-index: 1;
+}
+
+.pos3{
+    width: 8%;
+    top: 43%;
+    left: 58%;
+    z-index: 1;
+}
+
+.pos4{
+    width: 8%;
+    top: 43%;
+    left: 86%;
+    z-index: 1;
+}
+
+.pos5{
+    width: 10%;
+    top: 56%;
+    left: 22%;
+    z-index: 3;
+}
+
+.pos6{
+    width: 10%;
+    top: 71%;
+    left: 43%;
+    z-index: 3;
+}
+
+.pos7{
+    width: 10%;
+    top: 58%;
+    left: 65%;
+    z-index: 3;
+}
+
+.pos8{
+    width: 12%;
+    top: 70%;
+    right: 6%;
+    z-index: 5;
+}
+
+.pos9{
+    width: 12%;
+    top: 70%;
+    left: 6%;
+    z-index: 5;
+}
+
+/* UI */
+
+#game_ui{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#score_board{
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 3/1;
+    top: 2%;
+    left: 20%;
+    background-image: url(../img/score_board.svg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+#warning_board{
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 3/1;
+    top: 2%;
+    right: 20%;
+    background-image: url(../img/warning_board.svg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+
+#time_container{
+    position: absolute;
+    width: 13%;
+    aspect-ratio: 1/1;
+    top: 1%;
+    right: 1%;
+    
+}
+
+#watch{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/watch.svg);
+    background-size: 100% 100%;
+}
+
+#hour{
+    position: absolute;
+    width: 3%;
+    height: 30%;
+    top: 20%;
+    left: 49%;
+    border-radius: 50%;
+    background-color: red;
+    transform-origin: center bottom;
+    z-index: 2;
+}
+
+#minut{
+    position: absolute;
+    top: 5%;
+    left: 49%;
+    width: 3%;
+    height: 45%;
+    border-radius: 50%;
+    background-color: black;
+    transform-origin: center bottom;
+    z-index: 1;
+}
+
+
+/* OTHER SCREENS */
+
+#start{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/start_screen.svg);
+    background-size: cover;
+    z-index: 8;
+}
+
+#how_to_axe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: url(../img/how_to_play_screen.svg);
+    background-size: 100% 100%;
+    z-index: 10;
+}
+
+#game_over{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/game_over.svg);
+    background-size: cover;
+    z-index: 8;
+}
+
+#game_complete{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/game_complete.svg);
+    background-size: cover;
+    z-index: 8;
+}
+
+#points{
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 3/1;
+    top: 41%;
+    left: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+}
+
+#high_score {
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 3/1;
+    top: 52%;
+    left: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+}
+
+/* BUTTONS */
+
+#start_shift_btn{
+    width: 25%;
+    height: 25%;
+    aspect-ratio: 470/280;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    background-image: url(../img/start_shift_button.svg);
+    background-size: 100% 100%;
+    z-index: 9;
+}
+
+#how_to_axe_btn{
+    width: 25%;
+    height: 25%;
+    aspect-ratio: 470/280;
+    position: absolute;
+    top: 30%;
+    right: 8%;
+    background-image: url(../img/how_to_axe_button.svg);
+    background-size: 100% 100%;
+    z-index: 9;
+}
+
+#try_again_btn_1{
+    width: 20%;
+    height: 20%;
+    aspect-ratio: 640/280;
+    position: absolute;
+    top: 70%;
+    left: 43%;
+    background-image: url(../img/try_again_button.svg);
+    background-size: 100% 100%;
+    z-index: 9;
+}
+
+#try_again_btn_2{
+    width: 25%;
+    height: 25%;
+    aspect-ratio: 640/280;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    background-image: url(../img/try_again_button.svg);
+    background-size: 100% 100%;
+    z-index: 9;
+}
+
+#close_btn{
+    width: 7%;
+    height: 7%;
+    aspect-ratio: 640/280;
+    position: absolute;
+    top: 2%;
+    right: 15.5%;
+    background-image: url(../img/close_button.svg);
+    background-size: 100% 100%;
+    z-index: 11;
+}
+
+/* ANIMATIONS ASSETS*/
+
+.rise{
+    animation-name: rise_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rise_kf{
+    0% {translate: 0% 0%;}
+    45% {translate: 0% -80%;}
+    55% {translate: 0% -80%;}
+    100% {translate: 0% 0%;}
+}
+
+.freeze{
+    animation-play-state: paused;
+}
+
+.fadeout{
+    animation-name: fadeout_kf;
+    animation-duration: 1s;
+}
+
+@keyframes fadeout_kf {
+    
+    0% {
+        opacity: 100%;
+    }
+      
+    10% {
+        opacity: 90%;
+    }
+
+    20% {
+        opacity: 80%;
+    }
+
+    30% {
+        opacity: 70%;
+    }
+
+    40% {
+        opacity: 60%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    60% {
+        opacity: 40%;
+    }
+
+    70% {
+        opacity: 30%;
+    }
+
+    80% {
+        opacity: 20%;
+    }
+
+    90% {
+        opacity: 10%;
+    }
+
+    100% {
+      opacity: 0;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+/* ANIMATIONS BOSS */
+
+.move_l_boss{
+    animation-name: move_l_boss_kf;
+    animation-duration: 5s;
+}
+
+@keyframes move_l_boss_kf{
+    0% {translate: 0% 0%;}
+    40% {translate: 95% 0%;}
+    55% {translate: 95% 0%;}
+    100% {translate: 0% 0%;}
+}
+
+.move_m_boss{
+    animation-name: move_m_boss_kf;
+    animation-duration: 5s;
+}
+
+@keyframes move_m_boss_kf{
+    0% {translate: 0% 0%;}
+    40% {translate: 0% -62%;}
+    55% {translate: 0% -62%;}
+    100% {translate: 0% 0%;}
+}
+
+.move_r_boss{
+    animation-name: move_r_boss_kf;
+    animation-duration: 5s;
+}
+
+@keyframes move_r_boss_kf{
+    0% {translate: 0% 0%;}
+    40% {translate: -97% 0%;}
+    55% {translate: -97% 0%;}
+    100% {translate: 0% 0%;}
+}
+
+/* ANIMATIONS UI */
+.hour_animation {
+    animation-name: hour_animation_kf;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes hour_animation_kf {
+    to {
+      rotate: 360deg;
+    }
+}
+
+/* media quaries */
+
+@media (max-width:950px){
+    #score_board, #warning_board {
+        font-size: 35px;
+    }
+    
+    #points, #high_score{
+        font-size: 150%;
+    }
+    
+}
